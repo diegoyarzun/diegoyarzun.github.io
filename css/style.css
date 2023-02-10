@@ -1,0 +1,325 @@
+.generalcontainer
+{
+    display: grid;
+    grid-template-rows: repeat(8, 120px);
+    grid-template-columns: repeat(6,380px);
+    column-gap: 5px;
+    row-gap: 2px;
+    
+   
+    grid-template-areas: 
+    "posn01 posn02 posn03 posn04 posn05"
+    "posn11 posn12 posn13 posn14 posn15"
+    "posnaa posnaa posnaa posnaa posnaa"
+    "posnaa posnaa posnaa posnaa posnaa"
+    "posnaa posnaa posnaa posnaa posnaa"
+    "posnaa posnaa posnaa posnaa posnaa"
+    "posnaa posnaa posnaa posnaa posnaa"
+    "posn16 posn17 posn18 posn19 posn20"
+    
+}
+
+a
+{
+    color: aliceblue;
+}
+
+
+
+body
+{
+  margin: 0px;  
+  background-color:beige;
+}
+
+#logoimage
+{
+    grid-area: posn01;
+    text-align: center;
+}
+#logospace
+{
+    grid-area: posn11;
+    padding-top: 20px;
+    text-align:center;
+    font-size:170%;
+    font-family: 'Permanent Marker', cursive;
+   
+}
+
+.tabsgeneral
+{
+    position: relative;
+    top: 55%;
+    text-align: end;
+    margin-right: 15px;
+    border: 9px solid black;
+    margin-bottom: 60px; 
+    background-color: rgb(4, 92, 92);
+    
+}
+h4
+{
+    font-style: bold;
+}
+
+#workexperience
+{
+    grid-area: posn13;
+     
+}
+#courses
+{
+    
+    grid-area: posn14;
+    
+    
+}
+#aboutme
+{
+    
+    grid-area: posn15;
+    
+}
+#middle
+{
+    grid-area: posnaa;
+    background-image: url(../images/night3.png);
+    border-top: 10px black solid;
+    border-bottom: 10px black solid;
+    
+}
+#contactinformation
+{
+    padding-top: 10px;
+    grid-area: posn20;
+    text-align: start;
+    margin-right: 15px;
+    position: relative;
+    top: 10%;
+}
+#socialmedia
+{
+    padding-top: 10px;
+    grid-area: posn19;
+    text-align: end;
+    position: relative;
+    top: 10%;
+    margin-right: 15px;
+}
+
+  .generalcontainer2
+  {
+      display: grid;
+      grid-template-rows: repeat(7, 120px);
+      grid-template-columns: repeat(6,380px);
+      column-gap: 5px;
+      row-gap: 2px;
+      
+      
+     
+      grid-template-areas: 
+      "posn01         posnttr      posn03      posn04      posn05"
+      "posn11         posn1sd      posn13      posn14      posn15"
+      "posnb1         posnb1      posncc      posncc      posn22"
+      "posnb1         posnb1      posncc      posncc      posn22"
+      "posnmiddleh    posnmiddleh posnmiddleh posnmiddleh posnmiddleh"
+      "posnb2         posnb2      posndd      posndd      posn21"
+      "posnb2         posnb2      posndd      posndd      posn21"
+      "posn16         posn17      posn18      posn19      posn20"
+      
+      
+  }
+
+#first
+{
+    padding-top: 15px;
+    grid-area: posnb1;
+    background-image: url(../images/notebooksf.png);
+    
+}
+#second
+{
+    
+    grid-area: posnb2;
+    padding-left: 20%;
+    background-image: url(../images/statisticsf.png);
+}
+#third
+{
+    grid-area: posncc;
+    padding-top: 15px;
+    text-align: justify;
+    border-left: 10px solid black;
+    padding: 2%;
+    
+}
+#fourth
+{
+    grid-area: posndd;
+    text-align: justify;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    
+    padding: 2%;
+}
+#middlespace
+{
+    background-color: rgb(4, 92, 92);
+    grid-area: posnmiddleh;
+}
+@media screen and (max-width:800px) 
+{
+
+    .generalcontainer
+    {
+		display: grid;
+		grid-template-rows: repeat(9,100px);
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+		grid-template-columns: 100%;
+
+        grid-template-areas: 
+        "posn1"
+        "posn2"
+        "posn3"
+        "posn4"
+        "posn5"
+        "posn5"
+        "posn5"
+        "posn9"
+        "posn10"
+
+	}
+    .generalcontainer2
+    {
+		display: grid;
+		grid-template-rows: repeat(14,100px);
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+		grid-template-columns: 100%;
+        grid-template-areas: 
+        "posn1"
+        "posn2"
+        "posn3"
+        "posn4"
+        "posn55"
+        "posn66"
+        "posn77"
+        "posn88"
+        "posn9"
+        "posn10"
+        
+
+	}
+    .tabsgeneral
+    {
+        position: relative;
+        top: 65%;
+        text-align: center;
+        margin-right: 0px;
+        border: 5px solid black;
+        margin-bottom: 10px; 
+        background-color: rgb(4, 92, 92);
+        
+    }
+    #logoimage
+    {
+    grid-area: posn1;
+    text-align: center;
+    bottom: 10%;
+    }
+
+    #workexperience
+    {
+        grid-area: posn2;
+        
+    }
+    #courses
+    {  
+        grid-area: posn3;
+    }
+    #aboutme
+    {
+        
+        grid-area: posn4;
+        
+    }
+    #middle
+    {
+        position: relative;
+        top: 20%;
+        text-align: center;
+        margin-right: 0px;
+        border: 5px solid black;
+        margin-bottom: 10px; 
+        background-image: url(../images/volcanos2.jpg);
+        grid-area: posn5;
+    }
+    #contactinformation
+    {
+        top: 35%;
+        grid-area: posn10;
+        text-align: center;
+        margin-right: 15px;
+        position: relative;
+        border-color: black;
+    }
+    
+    #socialmedia
+    {
+        top: 65%;
+        grid-area: posn9;
+        text-align: center;
+        position: relative;
+        margin-right: 15px;
+    }
+
+    #first
+    {
+        position: relative;
+        top: 65%;
+        grid-area: posn55;
+        background-image: url(../images/notebooks2.jpg);
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        border-top: 5px solid black;  
+    }
+    
+
+    #second
+    {
+        position: relative;
+        top: 65%;
+        grid-area: posn77;
+        background-image: url(../images/statistics1.png);
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+
+    }
+ 
+
+    #third
+    {
+        position: relative;
+        top: 65%;
+        grid-area: posn66;
+        text-align: justify;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        
+        
+    }
+    #fourth
+    {
+        position: relative;
+        top: 65%;
+        grid-area: posn88;
+        text-align: justify;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        
+
+    }
+}
